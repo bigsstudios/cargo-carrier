@@ -56,6 +56,8 @@ namespace Clicker
 
         private void Start()
         {
+            // SetBalance(500000000);
+
             Application.targetFrameRate = 60;
             _gameSpeed = 1f;
             CheckFirstStart();

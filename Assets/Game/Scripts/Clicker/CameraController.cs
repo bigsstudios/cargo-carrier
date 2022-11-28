@@ -18,6 +18,8 @@ namespace Clicker
         public float _targetRotY;
         public float _startRotY;
 
+        private Tween _moveTween;
+
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -74,7 +76,8 @@ namespace Clicker
                 var targetPos = aspectPosition.pos;
                 if (animate)
                 {
-                    transform.DOMove(targetPos, 1f);
+                    _moveTween?.Kill();
+                    _moveTween = transform.DOLocalMove(targetPos, 1f);
                 }
                 else
                 {
@@ -88,7 +91,8 @@ namespace Clicker
             var lastTargetPos = last.pos;
             if (animate)
             {
-                transform.DOMove(lastTargetPos, 1f);
+                _moveTween?.Kill();
+                _moveTween = transform.DOLocalMove(lastTargetPos, 1f);
             }
             else
             {

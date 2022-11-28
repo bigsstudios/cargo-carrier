@@ -79,8 +79,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ee1def27d6a4b43a1d0594135197f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  earnPrice: 625
+  earnPrice: 6250
   level: 4
+  colorPart1: {fileID: 0}
+  color1: {r: 0, g: 0, b: 0, a: 0}
+  color2: {r: 0, g: 0, b: 0, a: 0}
 --- !u!65 &208149450332670142
 BoxCollider:
   m_ObjectHideFlags: 0

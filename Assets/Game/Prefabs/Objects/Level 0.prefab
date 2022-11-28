@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ee1def27d6a4b43a1d0594135197f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  earnPrice: 1
+  earnPrice: 10
   level: 0
   colorPart1: {fileID: 7491040932233027252}
   color1: {r: 1, g: 0.2783019, b: 0.2783019, a: 1}
